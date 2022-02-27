@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/images/meh.png" type="Texture" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.105882, 0.105882, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 512, -32 )
+amount = 240
+lifetime = 10.0
+preprocess = 10.0
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 512, 0 )
+direction = Vector2( 0, 1 )
+spread = 0.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 100.0
+initial_velocity_random = 0.25
+scale_amount = 0.06
+scale_amount_random = 0.25
