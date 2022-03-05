@@ -1,6 +1,6 @@
 extends Node
 
-export var interval := 240
+export var interval := 240 / 3
 var timer := interval
 
 func _physics_process(delta):

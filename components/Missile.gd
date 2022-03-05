@@ -5,7 +5,7 @@ class_name Projectile
 var explosion_scene = preload("res://components/Explosion.tscn")
 
 var velocity := Vector2(0, -1)
-var speed := 120.0
+var speed := 120.0 * 3
 var triggered := false
 export var radius := 32
 export var dmg := 1

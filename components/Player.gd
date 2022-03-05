@@ -12,10 +12,10 @@ var acceleration := 0.2
 var state = "idle"
 var health := 1
 
-var cooldown_interval = 60
+var cooldown_interval = 60 / 3
 var cooldown_timer = 0
 
-var fire_input_buffer = 15
+var fire_input_buffer = 15 / 3
 var fire_input_timer = 0
 
 
