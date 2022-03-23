@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/329826__visual__gtr700-dancovintclear.wav-35b6142e10db95a57976d55b59548d4d.sample"
+
+[deps]
+
+source_file="res://assets/audio/music/329826__visual__gtr700-dancovintclear.wav"
+dest_files=[ "res://.import/329826__visual__gtr700-dancovintclear.wav-35b6142e10db95a57976d55b59548d4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

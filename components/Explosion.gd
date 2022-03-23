@@ -1,5 +1,6 @@
 extends Area2D
 
+onready var metronome = get_node("/root/Metronome")
 var dmg := 1
 var active := false
 
@@ -27,12 +28,28 @@ func set_dmg(dmg):
 
 func activate():
 	active = true
-	$Timer.start()
+	var rand = metronome.rng.randi_range(0, 1)
+
+	# Randomly play one of the explosion animations
+	if rand == 0:
+		$AnimatedSprite.play('explosion0')
+	else:
+		$AnimatedSprite.play('explosion1')
 
 func _on_Explosion_body_entered(body):
-	if body.has_method('_take_damage'):
-		body._take_damage(dmg)
+	if body.has_method('take_damage'):
+		body.take_damage(dmg)
 
+func _on_Explosion_area_entered(area):
+	if area.has_method('take_damage'):
+		area.take_damage(dmg)
 
 func _on_Timer_timeout():
 	queue_free()
+
+
+func _on_AnimatedSprite_animation_finished():
+	$AnimatedSprite.playing = false
+	queue_free()
+
+

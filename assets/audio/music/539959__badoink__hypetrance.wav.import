@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/539959__badoink__hypetrance.wav-69ad09ab1b9ae2d07147f887f9db1a3a.sample"
+
+[deps]
+
+source_file="res://assets/audio/music/539959__badoink__hypetrance.wav"
+dest_files=[ "res://.import/539959__badoink__hypetrance.wav-69ad09ab1b9ae2d07147f887f9db1a3a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

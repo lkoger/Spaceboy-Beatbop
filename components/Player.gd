@@ -2,6 +2,8 @@ extends KinematicBody2D
 
 var missle_scene = preload("res://components/Missile.tscn")
 
+onready var metronome = get_node("/root/Metronome")
+
 export var ui_path : NodePath = ""
 var ui = null
 var reload_progress = null
@@ -68,7 +70,6 @@ func _change_state(new_state):
 			$Sprite.scale = Vector2(0.75, 1)
 		else:
 			$Sprite.scale = Vector2(1, 1)
-		#$AnimatedSprite.play(state)
 
 func _fire():
 	var missle = missle_scene.instance()
@@ -76,7 +77,7 @@ func _fire():
 	get_tree().root.add_child(missle)
 	missle.fire()
 
-func _take_damage(dmg):
+func take_damage(dmg):
 	health -= dmg
 	print(health)
 
@@ -85,4 +86,4 @@ func handle_explosion(projectile):
 	var radius = projectile.radius
 	var dist = global_position.distance_to(projectile.global_position)
 	if dist <= radius:
-		_take_damage(projectile.dmg)
+		take_damage(projectile.dmg)

@@ -1,6 +1,40 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://components/Metronome.gd" type="Script" id=1]
+[ext_resource path="res://assets/audio/sfx/Explosion1.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/audio/sfx/Explosion2.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/sfx/Explosion3.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/sfx/Explosion6.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/sfx/Explosion4.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/sfx/Explosion7.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/audio/sfx/Explosion5.wav" type="AudioStream" id=8]
 
 [node name="Metronome" type="CanvasLayer"]
 script = ExtResource( 1 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="SFX" type="Node2D" parent="."]
+
+[node name="Explosions" type="Node2D" parent="SFX"]
+
+[node name="MissleExplosion1" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 2 )
+
+[node name="MissleExplosion2" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 3 )
+
+[node name="MissleExplosion3" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 4 )
+
+[node name="MissleExplosion4" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 6 )
+
+[node name="MissleExplosion5" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 8 )
+
+[node name="MissleExplosion6" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 5 )
+
+[node name="MissleExplosion7" type="AudioStreamPlayer2D" parent="SFX/Explosions"]
+stream = ExtResource( 7 )
