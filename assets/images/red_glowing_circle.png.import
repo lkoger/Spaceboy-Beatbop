@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Z8FreedomFighter_Magma_110x110.png-012f81ab24561528702e4bc73000887f.stex"
+path="res://.import/red_glowing_circle.png-7eaf0824852631ec244bed64140f1d1d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Z8FreedomFighter_Magma_110x110.png"
-dest_files=[ "res://.import/Z8FreedomFighter_Magma_110x110.png-012f81ab24561528702e4bc73000887f.stex" ]
+source_file="res://assets/images/red_glowing_circle.png"
+dest_files=[ "res://.import/red_glowing_circle.png-7eaf0824852631ec244bed64140f1d1d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -16,6 +16,9 @@ func _arrived_at_destination(object, key):
 	if (len(player_container) > 0):
 		var player = player_container[0]
 		set_target(player)
+		# Should be a "Charge Laser" type method instead.
+		if not $BeamPosition/RedLaser.is_casting:
+			$BeamPosition/RedLaser.set_is_casting(true)
 
 func set_target(player):
 	target = player
